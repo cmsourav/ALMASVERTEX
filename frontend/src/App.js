@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Header from "./components/Header";
@@ -13,6 +13,7 @@ import CompanyProfile from "./pages/CompanyProfile";
 import MedicalCategory from "./pages/MedicalCategory";
 import { medicalCategories } from "./mock/mock";
 import { Toaster } from "./components/ui/toaster";
+import LoadingScreen from "./components/LoadingScreen";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -23,8 +24,11 @@ function ScrollToTop() {
 }
 
 function App() {
+  const [loaded, setLoaded] = useState(false);
+
   return (
     <div className="App">
+      {!loaded && <LoadingScreen onComplete={() => setLoaded(true)} />}
       <BrowserRouter>
         <ScrollToTop />
         <Header />

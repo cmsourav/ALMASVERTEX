@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import {
   Mail, MapPin, Clock, Facebook, Twitter, Linkedin, Instagram,
-  ChevronDown, Menu, X, Gem, ArrowRight,
+  ChevronDown, Menu, X, ArrowRight,
 } from "lucide-react";
 import { company, services, medicalCategories } from "../mock/mock";
 
@@ -28,14 +28,12 @@ export default function Header() {
   }, [location.pathname]);
 
   const Logo = (
-    <Link to="/" className="flex items-center gap-2.5 group">
-      <span className="relative flex h-11 w-11 items-center justify-center rounded-lg bg-[var(--brand)] shadow-lg shadow-red-600/30">
-        <Gem className="h-6 w-6 text-white" strokeWidth={2.2} />
-      </span>
-      <span className="font-display text-2xl font-extrabold leading-none tracking-wide">
-        <span className="text-[var(--ink)]">ALMAS</span>
-        <span className="text-[var(--brand)]">VERTEX</span>
-      </span>
+    <Link to="/" className="flex items-center group">
+      <img
+        src="/logo.png"
+        alt="Almasvertex"
+        className="h-14 w-auto object-contain"
+      />
     </Link>
   );
 
