@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Mail, MapPin, Phone, Facebook, Twitter, Linkedin, Instagram, Gem, ArrowRight } from "lucide-react";
-import { company, services } from "../mock/mock";
+import { company, services, medicalCategories } from "../mock/mock";
 
 const socialIcon = { facebook: Facebook, twitter: Twitter, linkedin: Linkedin, instagram: Instagram };
 
@@ -9,9 +9,9 @@ export default function Footer() {
   return (
     <footer className="bg-[var(--ink)] text-gray-400">
       <div className="mx-auto max-w-7xl px-6 pt-16 pb-8">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-6">
           {/* Brand */}
-          <div>
+          <div className="lg:col-span-2">
             <div className="flex items-center gap-2.5">
               <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-[var(--brand)]">
                 <Gem className="h-6 w-6 text-white" strokeWidth={2.2} />
@@ -21,7 +21,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="mt-5 text-sm leading-relaxed">
-              Delivering top-notch construction and contracting solutions across the Kingdom — with precision, integrity and an unwavering focus on safety.
+              Delivering top-notch construction, contracting and medical supply solutions across the Kingdom — with precision, integrity and an unwavering focus on safety.
             </p>
             <div className="mt-5 flex items-center gap-3">
               {company.socials.map((s) => {
@@ -41,7 +41,7 @@ export default function Footer() {
             <h4 className="font-display text-xl font-bold uppercase tracking-wide text-white">Company</h4>
             <span className="mt-2 block h-1 w-10 bg-[var(--brand)]" />
             <ul className="mt-5 space-y-3 text-sm">
-              {[["Home", "/"], ["About Us", "/about"], ["Medical Division", "/about-medical"], ["Careers", "/career"], ["Contact", "/contact"]].map(([label, to]) => (
+              {[["Home", "/"], ["About Us", "/about"], ["Medical Division", "/about-medical"], ["Company Profile", "/company-profile"], ["Careers", "/career"], ["Contact", "/contact"]].map(([label, to]) => (
                 <li key={to}>
                   <Link to={to} className="inline-flex items-center gap-2 hover:text-[var(--brand)] transition-colors">
                     <ArrowRight className="h-3.5 w-3.5 text-[var(--brand)]" /> {label}
@@ -51,15 +51,30 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Contracting Services (all 7) */}
           <div>
-            <h4 className="font-display text-xl font-bold uppercase tracking-wide text-white">Services</h4>
+            <h4 className="font-display text-xl font-bold uppercase tracking-wide text-white">Contracting</h4>
             <span className="mt-2 block h-1 w-10 bg-[var(--brand)]" />
             <ul className="mt-5 space-y-3 text-sm">
-              {services.slice(0, 6).map((s) => (
+              {services.map((s) => (
                 <li key={s.slug}>
                   <Link to={`/services/${s.slug}`} className="inline-flex items-center gap-2 hover:text-[var(--brand)] transition-colors">
                     <ArrowRight className="h-3.5 w-3.5 text-[var(--brand)]" /> {s.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Medical Products (all 10) */}
+          <div>
+            <h4 className="font-display text-xl font-bold uppercase tracking-wide text-white">Medical Products</h4>
+            <span className="mt-2 block h-1 w-10 bg-[var(--brand)]" />
+            <ul className="mt-5 space-y-3 text-sm">
+              {medicalCategories.map((c) => (
+                <li key={c.slug}>
+                  <Link to={`/${c.slug}`} className="inline-flex items-center gap-2 hover:text-[var(--brand)] transition-colors">
+                    <ArrowRight className="h-3.5 w-3.5 text-[var(--brand)]" /> {c.name}
                   </Link>
                 </li>
               ))}

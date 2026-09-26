@@ -1,18 +1,49 @@
 import React, { useState } from "react";
-import { MapPin, Phone, Mail, Send, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Send, Clock, Loader2 } from "lucide-react";
 import PageBanner from "../components/PageBanner";
 import Reveal from "../components/Reveal";
+import Seo from "../components/Seo";
 import { company } from "../mock/mock";
 import { useToast } from "../hooks/use-toast";
+import { emailjs, serviceId, contactTemplateId, isEmailConfigured } from "../lib/emailjs";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", phone: "", subject: "", message: "" });
+  const [submitting, setSubmitting] = useState(false);
   const { toast } = useToast();
 
-  const submit = (e) => {
+  const submit = async (e) => {
     e.preventDefault();
-    toast({ title: "Message sent", description: `Thanks ${form.name}! Our team will get back to you shortly.` });
-    setForm({ name: "", email: "", phone: "", subject: "", message: "" });
+
+    if (!isEmailConfigured) {
+      toast({
+        variant: "destructive",
+        title: "Email not configured yet",
+        description: "Add your EmailJS keys in frontend/.env to enable message sending.",
+      });
+      return;
+    }
+
+    setSubmitting(true);
+    try {
+      await emailjs.send(serviceId, contactTemplateId, {
+        name: form.name,
+        email: form.email,
+        phone: form.phone,
+        subject: form.subject,
+        message: form.message,
+      });
+      toast({ title: "Message sent", description: `Thanks ${form.name}! Our team will get back to you shortly.` });
+      setForm({ name: "", email: "", phone: "", subject: "", message: "" });
+    } catch (err) {
+      toast({
+        variant: "destructive",
+        title: "Could not send message",
+        description: "Something went wrong. Please try again shortly.",
+      });
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const cards = [
@@ -24,6 +55,10 @@ export default function Contact() {
 
   return (
     <div>
+      <Seo
+        title="Contact Us | Almasvertex"
+        description="Get in touch with Almasvertex in Ad-Dammam, Saudi Arabia. Contact our contracting and medical divisions for quotes, projects and enquiries."
+      />
       <PageBanner title="Contact Us" crumbs={[{ label: "Contact Us" }]} image="https://images.unsplash.com/photo-1511454493857-0a29f2c023c7" />
 
       <section className="py-24">
@@ -59,8 +94,8 @@ export default function Contact() {
                   <input value={form.subject} onChange={(e) => setForm({ ...form, subject: e.target.value })} placeholder="Subject" className="w-full rounded-lg border border-gray-200 px-4 py-3.5 text-sm outline-none focus:border-[var(--brand)]" />
                 </div>
                 <textarea required value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} placeholder="Your Message" rows={5} className="w-full rounded-lg border border-gray-200 px-4 py-3.5 text-sm outline-none focus:border-[var(--brand)]" />
-                <button type="submit" className="btn-brand inline-flex items-center gap-2 rounded-md px-8 py-4 text-sm font-semibold uppercase tracking-wide">
-                  Submit Now <Send className="h-4 w-4" />
+                <button type="submit" disabled={submitting} className="btn-brand inline-flex items-center gap-2 rounded-md px-8 py-4 text-sm font-semibold uppercase tracking-wide disabled:opacity-70">
+                  {submitting ? <>Sending <Loader2 className="h-4 w-4 animate-spin" /></> : <>Submit Now <Send className="h-4 w-4" /></>}
                 </button>
               </form>
             </Reveal>

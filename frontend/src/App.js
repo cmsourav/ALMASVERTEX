@@ -9,6 +9,9 @@ import AboutMedical from "./pages/AboutMedical";
 import ServiceDetail from "./pages/ServiceDetail";
 import Career from "./pages/Career";
 import Contact from "./pages/Contact";
+import CompanyProfile from "./pages/CompanyProfile";
+import MedicalCategory from "./pages/MedicalCategory";
+import { medicalCategories } from "./mock/mock";
 import { Toaster } from "./components/ui/toaster";
 
 function ScrollToTop() {
@@ -33,6 +36,10 @@ function App() {
             <Route path="/services/:slug" element={<ServiceDetail />} />
             <Route path="/career" element={<Career />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/company-profile" element={<CompanyProfile />} />
+            {medicalCategories.map((c) => (
+              <Route key={c.slug} path={`/${c.slug}`} element={<MedicalCategory slug={c.slug} />} />
+            ))}
           </Routes>
         </main>
         <Footer />

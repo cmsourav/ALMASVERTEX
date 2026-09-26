@@ -4,7 +4,7 @@ import {
   Mail, MapPin, Clock, Facebook, Twitter, Linkedin, Instagram,
   ChevronDown, Menu, X, Gem, ArrowRight,
 } from "lucide-react";
-import { company, services } from "../mock/mock";
+import { company, services, medicalCategories } from "../mock/mock";
 
 const socialIcon = { facebook: Facebook, twitter: Twitter, linkedin: Linkedin, instagram: Instagram };
 
@@ -13,6 +13,8 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mAbout, setMAbout] = useState(false);
   const [mSectors, setMSectors] = useState(false);
+  const [mContracting, setMContracting] = useState(false);
+  const [mMedical, setMMedical] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -89,16 +91,31 @@ export default function Header() {
               </div>
             </div>
 
-            {/* Business Sectors dropdown */}
+            {/* Business Sectors mega dropdown */}
             <div className="group relative">
               <button className="nav-link flex items-center gap-1 text-[var(--ink)] hover:text-[var(--brand)] transition-colors">
                 Business Sectors <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
               </button>
-              <div className="invisible absolute left-0 top-full pt-4 opacity-0 translate-y-2 transition-all duration-300 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
-                <div className="w-64 overflow-hidden rounded-xl border border-gray-100 bg-white py-2 shadow-2xl">
-                  {services.map((s) => (
-                    <Link key={s.slug} to={`/services/${s.slug}`} className="dropdown-item block px-5 py-2.5 text-[var(--ink-soft)]">{s.title}</Link>
-                  ))}
+              <div className="invisible absolute left-1/2 top-full -translate-x-1/2 pt-4 opacity-0 translate-y-2 transition-all duration-300 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0">
+                <div className="grid w-[620px] grid-cols-2 gap-2 overflow-hidden rounded-xl border border-gray-100 bg-white p-3 shadow-2xl">
+                  {/* Contracting column */}
+                  <div className="rounded-lg p-2">
+                    <div className="px-3 pb-2 text-xs font-bold uppercase tracking-[0.18em] text-[var(--brand)]">Contracting</div>
+                    {services.map((s) => (
+                      <Link key={s.slug} to={`/services/${s.slug}`} className="dropdown-item block rounded-md px-3 py-2 text-sm text-[var(--ink-soft)]">{s.title}</Link>
+                    ))}
+                  </div>
+                  {/* Medical column */}
+                  <div className="rounded-lg bg-gray-50 p-2">
+                    <Link to="/about-medical" className="flex items-center justify-between px-3 pb-2 text-xs font-bold uppercase tracking-[0.18em] text-[var(--brand)]">
+                      Medical <ArrowRight className="h-3.5 w-3.5" />
+                    </Link>
+                    <div className="max-h-[300px] overflow-y-auto pr-1">
+                      {medicalCategories.map((c) => (
+                        <Link key={c.slug} to={`/${c.slug}`} className="dropdown-item block rounded-md px-3 py-1.5 text-sm text-[var(--ink-soft)]">{c.name}</Link>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -108,7 +125,7 @@ export default function Header() {
           </nav>
 
           <div className="hidden lg:block">
-            <Link to="/contact" className="btn-brand inline-flex items-center gap-2 rounded-md px-6 py-3 text-sm font-semibold uppercase tracking-wide">
+            <Link to="/company-profile" className="btn-brand inline-flex items-center gap-2 rounded-md px-6 py-3 text-sm font-semibold uppercase tracking-wide">
               Company Profile <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
@@ -146,15 +163,35 @@ export default function Header() {
             </button>
             {mSectors && (
               <div className="flex flex-col bg-gray-50">
-                {services.map((s) => (
-                  <Link key={s.slug} to={`/services/${s.slug}`} className="border-b py-2.5 pl-4 text-[var(--ink-soft)]">{s.title}</Link>
-                ))}
+                {/* Contracting nested */}
+                <button onClick={() => setMContracting((v) => !v)} className="flex items-center justify-between border-b py-2.5 pl-4 pr-2 text-sm font-semibold text-[var(--brand)]">
+                  Contracting <ChevronDown className={`h-4 w-4 transition-transform ${mContracting ? "rotate-180" : ""}`} />
+                </button>
+                {mContracting && (
+                  <div className="flex flex-col bg-white">
+                    {services.map((s) => (
+                      <Link key={s.slug} to={`/services/${s.slug}`} className="border-b py-2.5 pl-8 text-sm text-[var(--ink-soft)]">{s.title}</Link>
+                    ))}
+                  </div>
+                )}
+                {/* Medical nested */}
+                <button onClick={() => setMMedical((v) => !v)} className="flex items-center justify-between border-b py-2.5 pl-4 pr-2 text-sm font-semibold text-[var(--brand)]">
+                  Medical <ChevronDown className={`h-4 w-4 transition-transform ${mMedical ? "rotate-180" : ""}`} />
+                </button>
+                {mMedical && (
+                  <div className="flex flex-col bg-white">
+                    <Link to="/about-medical" className="border-b py-2.5 pl-8 text-sm font-medium text-[var(--ink)]">Medical Division</Link>
+                    {medicalCategories.map((c) => (
+                      <Link key={c.slug} to={`/${c.slug}`} className="border-b py-2.5 pl-8 text-sm text-[var(--ink-soft)]">{c.name}</Link>
+                    ))}
+                  </div>
+                )}
               </div>
             )}
 
             <Link to="/career" className="border-b py-3">Career</Link>
             <Link to="/contact" className="border-b py-3">Contact</Link>
-            <Link to="/contact" className="btn-brand mt-5 inline-flex items-center justify-center gap-2 rounded-md px-6 py-3 text-sm font-semibold uppercase">
+            <Link to="/company-profile" className="btn-brand mt-5 inline-flex items-center justify-center gap-2 rounded-md px-6 py-3 text-sm font-semibold uppercase">
               Company Profile <ArrowRight className="h-4 w-4" />
             </Link>
           </nav>

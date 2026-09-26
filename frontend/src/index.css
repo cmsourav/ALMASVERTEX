@@ -136,3 +136,10 @@ html {
 
 .dropdown-item { transition: color 0.2s ease, padding-left 0.2s ease, background 0.2s ease; }
 .dropdown-item:hover { color: var(--brand); padding-left: 1.35rem; }
+
+/* Thin scrollbar for horizontal medical category nav */
+.medcat-scroll { scrollbar-width: thin; scrollbar-color: #d4d4d4 transparent; }
+.medcat-scroll::-webkit-scrollbar { height: 6px; }
+.medcat-scroll::-webkit-scrollbar-track { background: transparent; }
+.medcat-scroll::-webkit-scrollbar-thumb { background: #d4d4d4; border-radius: 6px; }
+.medcat-scroll::-webkit-scrollbar-thumb:hover { background: var(--brand); }
