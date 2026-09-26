@@ -30,7 +30,7 @@ export default function About() {
             <span className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--brand)]">About Almasvertex</span>
             <h2 className="font-display mt-4 text-4xl font-bold uppercase leading-tight text-[var(--ink)] md:text-5xl">Leaders In Construction Solutions</h2>
             <p className="mt-6 leading-relaxed text-[var(--ink-soft)]">
-              At Almasvertex, we are dedicated to providing exceptional construction and contracting solutions tailored to meet the diverse needs of our clients. With extensive experience in the industry, we have established a strong reputation for delivering high-quality services — including manpower supply, material supply, equipment rental, scaffolding, civil construction, backfilling materials and temporary facilities.
+              At Almasvertex, we are dedicated to providing exceptional construction and contracting solutions tailored to meet the diverse needs of our clients. With extensive experience in the industry, we have established a strong reputation for delivering high-quality services — including material supply, equipment rental, scaffolding, civil construction, backfilling materials and temporary facilities.
             </p>
             <p className="mt-4 leading-relaxed text-[var(--ink-soft)]">
               We prioritise sustainability and environmentally responsible practices. By incorporating eco-friendly methods and materials, we not only reduce our environmental impact but also provide innovative solutions that add value to our clients' projects.
@@ -82,7 +82,7 @@ export default function About() {
           </Reveal>
           <div className="mt-14 grid gap-8 md:grid-cols-2">
             {[{ icon: Compass, title: "Our Vision", text: "To be the leading provider of comprehensive construction and contracting solutions in the region, recognised for our commitment to excellence, innovation and delivering projects that exceed client expectations." },
-              { icon: Target, title: "Our Mission", text: "To deliver exceptional value to our clients through quality workmanship, reliable services and sustainable practices. We aim to foster long-term partnerships by understanding and exceeding expectations." }].map((c, i) => (
+            { icon: Target, title: "Our Mission", text: "To deliver exceptional value to our clients through quality workmanship, reliable services and sustainable practices. We aim to foster long-term partnerships by understanding and exceeding expectations." }].map((c, i) => (
               <Reveal key={c.title} delay={i * 120} variant={i === 0 ? "left" : "right"}>
                 <div className="group h-full rounded-2xl bg-white p-9 shadow-sm ring-1 ring-gray-100 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
                   <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-[var(--brand)] text-white"><c.icon className="h-7 w-7" /></span>

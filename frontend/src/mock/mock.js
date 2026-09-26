@@ -4,9 +4,9 @@
 export const company = {
   name: "Almasvertex",
   tagline: "Construction & Contracting",
-  email: "info@almasvertex.com",
-  phones: ["+966 58 161 4777", "+966 50 621 8748"],
-  address: "Al-Azdi Street, Al Salam District, Ad-Dammam, Saudi Arabia",
+  email: "admin@almasvertex.com",
+  phones: ["+966541539197"],
+  address: "Ad-Dammam, Saudi Arabia",
   shortAddress: "Ad-Dammam, Saudi Arabia",
   hours: "Sat - Thurs : 8:00 AM - 5:00 PM",
   socials: [
@@ -36,14 +36,6 @@ export const heroSlides = [
   },
   {
     id: 3,
-    kicker: "Manpower",
-    title: "Expert Talent, Delivered On Demand",
-    text: "We provide specialized manpower solutions to help you achieve your goals with precision and efficiency.",
-    cta: "/services/manpower-supply",
-    image: "https://images.unsplash.com/photo-1659449082344-53f79e1e4198",
-  },
-  {
-    id: 4,
     kicker: "Equipment",
     title: "Quality Equipment, Flexible Rental Solutions",
     text: "Get the tools you need to tackle any project. Our flexible equipment rental solutions keep your operations running smoothly and efficiently.",
@@ -107,20 +99,6 @@ export const services = [
     gallery: [
       "https://images.unsplash.com/photo-1622082679766-c5912d9416eb",
       "https://images.unsplash.com/photo-1511454493857-0a29f2c023c7",
-    ],
-  },
-  {
-    slug: "manpower-supply",
-    title: "Manpower Supply",
-    short: "Skilled and unskilled workforce solutions for short and long-term assignments.",
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5",
-    intro:
-      "At Almasvertex, we specialise in providing tailored manpower solutions that cater to the unique demands of your construction projects. Our rigorous recruitment process identifies only the most qualified candidates, ensuring they possess the certifications and training required for their trades.",
-    body:
-      "Whether your project requires skilled professionals like carpenters and electricians or general labourers, we have the resources to meet your needs for both short-term and long-term assignments. Our dedicated team upholds high standards of performance and safety on-site, giving you access to a reliable workforce that enhances productivity and aligns with your goals.",
-    gallery: [
-      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5",
-      "https://images.unsplash.com/photo-1531834685032-c34bf0d84c77",
     ],
   },
   {
