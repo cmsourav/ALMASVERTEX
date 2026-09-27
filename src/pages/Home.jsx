@@ -54,12 +54,12 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6">
           <Reveal className="mx-auto max-w-3xl text-center">
             <span className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--brand)]">Our Purpose</span>
-            <h2 className="font-display mt-4 text-4xl font-bold uppercase text-[var(--ink)] md:text-5xl">Vision of Empowerment, Mission of Inspiration</h2>
+            <h2 className="font-display mt-4 text-4xl font-bold uppercase text-[var(--ink)] md:text-5xl">Our Vision & Mission</h2>
             <p className="mt-4 text-[var(--ink-soft)]">Driven by a vision of progress and a mission of excellence, we are committed to shaping a brighter future through innovation, collaboration and dedication.</p>
           </Reveal>
           <div className="mt-14 grid gap-8 md:grid-cols-2">
             {[{ icon: Compass, title: "Our Vision", text: "To be the leading provider of comprehensive construction and contracting solutions in the region — recognised for excellence, innovation and delivering projects that exceed client expectations." },
-              { icon: Target, title: "Our Mission", text: "To deliver exceptional value through quality workmanship, reliable services and sustainable practices. We foster long-term partnerships by understanding and exceeding our clients' expectations." }].map((c, i) => (
+            { icon: Target, title: "Our Mission", text: "To deliver exceptional value through quality workmanship, reliable services and sustainable practices. We foster long-term partnerships by understanding and exceeding our clients' expectations." }].map((c, i) => (
               <Reveal key={c.title} delay={i * 120} variant={i === 0 ? "left" : "right"}>
                 <div className="group h-full rounded-2xl bg-white p-9 shadow-sm ring-1 ring-gray-100 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
                   <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-[var(--brand)] text-white"><c.icon className="h-7 w-7" /></span>

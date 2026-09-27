@@ -54,7 +54,7 @@ export default function CompanyProfile() {
               {/* Sectors overview */}
               <div className="mt-10 grid gap-8 md:grid-cols-2">
                 <div>
-                  <h3 className="font-display text-2xl font-bold uppercase text-[var(--ink)]">Contracting Sectors</h3>
+                  <h3 className="font-display text-2xl font-bold uppercase text-[var(--ink)]">Contracting Services</h3>
                   <span className="mt-2 block h-1 w-10 bg-[var(--brand)]" />
                   <ul className="mt-4 space-y-2 text-sm">
                     {services.map((s) => (

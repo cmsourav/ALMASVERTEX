@@ -78,7 +78,7 @@ export default function About() {
         <div className="mx-auto max-w-7xl px-6">
           <Reveal className="mx-auto max-w-3xl text-center">
             <span className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--brand)]">Our Purpose</span>
-            <h2 className="font-display mt-4 text-4xl font-bold uppercase text-[var(--ink)] md:text-5xl">Vision Of Empowerment, Mission Of Inspiration</h2>
+            <h2 className="font-display mt-4 text-4xl font-bold uppercase text-[var(--ink)] md:text-5xl">Our Vision & Mission</h2>
           </Reveal>
           <div className="mt-14 grid gap-8 md:grid-cols-2">
             {[{ icon: Compass, title: "Our Vision", text: "To be the leading provider of comprehensive construction and contracting solutions in the region, recognised for our commitment to excellence, innovation and delivering projects that exceed client expectations." },

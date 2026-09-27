@@ -198,9 +198,9 @@ export const testimonials = [
 // COMPANY PROFILE (editable placeholder — link the official PDF when available)
 // =============================================================
 export const companyProfile = {
-  headline: "The Almasvertex Company Profile",
+  headline: "About ALMAS VERTEX",
   intro:
-    "Almasvertex is a diversified contracting and supplies group serving the construction, industrial and healthcare sectors across the Kingdom of Saudi Arabia. This profile summarises who we are, the sectors we operate in and the value we deliver to our partners.",
+    "ALMAS VERTEX is a diversified contracting and supplies group serving the construction, industrial and healthcare sectors across the Kingdom of Saudi Arabia. This profile summarises who we are, the sectors we operate in and the value we deliver to our partners.",
   // Replace `pdfUrl` with the official Almasvertex company-profile PDF when provided.
   pdfUrl: "",
   highlights: [
