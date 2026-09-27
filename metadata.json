@@ -1,0 +1,8 @@
+{
+  "name": "Almasvertex",
+  "description": "Almasvertex Contracting & Material Supply and Medical Equipment Services in Saudi Arabia.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
