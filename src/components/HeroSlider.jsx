@@ -27,6 +27,8 @@ export default function HeroSlider() {
             <img
               src={slide.image}
               alt={slide.title}
+              loading={i === 0 ? "eager" : "lazy"}
+              fetchPriority={i === 0 ? "high" : "low"}
               className={`h-full w-full object-cover ${i === index ? "kenburns" : ""}`}
             />
           </div>

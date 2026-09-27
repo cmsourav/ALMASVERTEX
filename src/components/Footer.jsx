@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Mail, MapPin, Phone, Facebook, Twitter, Linkedin, Instagram, Gem, ArrowRight } from "lucide-react";
+import { Mail, MapPin, Phone, Facebook, Twitter, Linkedin, Instagram, ArrowRight } from "lucide-react";
 import { company, services, medicalCategories } from "../mock/mock";
 
 const socialIcon = { facebook: Facebook, twitter: Twitter, linkedin: Linkedin, instagram: Instagram };
@@ -12,13 +12,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-6">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2.5">
-              <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-[var(--brand)]">
-                <Gem className="h-6 w-6 text-white" strokeWidth={2.2} />
-              </span>
-              <span className="font-display text-2xl font-extrabold tracking-wide">
-                <span className="text-white">ALMAS</span><span className="text-[var(--brand)]">VERTEX</span>
-              </span>
+            <div>
+              <img
+                src="/logo.png"
+                alt="Almasvertex logo"
+                loading="lazy"
+                className="h-16 w-auto object-contain"
+              />
             </div>
             <p className="mt-5 text-sm leading-relaxed">
               Delivering top-notch construction, contracting and medical supply solutions across the Kingdom — with precision, integrity and an unwavering focus on safety.

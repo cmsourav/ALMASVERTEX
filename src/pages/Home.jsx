@@ -16,7 +16,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 lg:grid-cols-2">
           <Reveal variant="left" className="relative">
             <div className="overflow-hidden rounded-2xl">
-              <img src="https://images.unsplash.com/photo-1652303518379-c0ef1c9fb2b1" alt="Almasvertex team" className="h-[480px] w-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1652303518379-c0ef1c9fb2b1?w=960&q=80&auto=format&fit=crop" alt="Almasvertex team" loading="lazy" className="h-[480px] w-full object-cover" />
             </div>
             <div className="absolute -bottom-8 -right-4 hidden rounded-xl bg-[var(--brand)] px-8 py-6 text-white shadow-2xl md:block">
               <div className="font-display text-5xl font-extrabold">18+</div>
@@ -88,7 +88,7 @@ export default function Home() {
               <Reveal key={s.slug} delay={(i % 3) * 100}>
                 <Link to={`/services/${s.slug}`} className="svc-card group block h-full overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-gray-100 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                   <div className="relative h-56 overflow-hidden">
-                    <img src={s.image} alt={s.title} className="h-full w-full object-cover" />
+                    <img src={s.image} alt={s.title} loading="lazy" className="h-full w-full object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                     <span className="absolute bottom-4 right-4 flex h-11 w-11 items-center justify-center rounded-full bg-[var(--brand)] text-white opacity-0 transition-all duration-300 group-hover:opacity-100">
                       <ArrowUpRight className="h-5 w-5" />
@@ -122,7 +122,7 @@ export default function Home() {
           <Reveal variant="right" className="grid grid-cols-2 gap-4">
             {medical.categories.map((c, i) => (
               <div key={c.name} className={`overflow-hidden rounded-2xl ${i % 2 === 1 ? "mt-8" : ""}`}>
-                <img src={c.image} alt={c.name} className="h-52 w-full object-cover transition-transform duration-500 hover:scale-110" />
+                <img src={c.image} alt={c.name} loading="lazy" className="h-52 w-full object-cover transition-transform duration-500 hover:scale-110" />
               </div>
             ))}
           </Reveal>
