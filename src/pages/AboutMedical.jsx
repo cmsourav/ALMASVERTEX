@@ -10,8 +10,8 @@ export default function AboutMedical() {
   return (
     <div>
       <Seo
-        title="Medical Division | Almasvertex Medical Supplies"
-        description="Almasvertex Medical Division — a professional B2B distributor of medical devices, equipment, surgical supplies and PPE across Saudi Arabia. Explore our full medical catalogue."
+        title="Medical Division | ALMAS VERTEX Medical Supplies"
+        description="ALMAS VERTEX Medical Division — a professional B2B distributor of medical devices, equipment, surgical supplies and PPE across Saudi Arabia. Explore our full medical catalogue."
       />
       <PageBanner title="Medical Division" crumbs={[{ label: "About", to: "/about" }, { label: "Medical Division" }]} image={medical.hero} />
 
@@ -43,7 +43,7 @@ export default function AboutMedical() {
           <Reveal className="mx-auto max-w-2xl text-center">
             <span className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--brand)]">Medical Catalogue</span>
             <h2 className="font-display mt-3 text-4xl font-bold uppercase text-[var(--ink)] md:text-5xl">Explore Our Product Categories</h2>
-            <p className="mt-4 text-[var(--ink-soft)]">Browse the complete Almasvertex medical catalogue. Each category has its own dedicated page with a full product range.</p>
+            <p className="mt-4 text-[var(--ink-soft)]">Browse the complete ALMAS VERTEX medical catalogue. Each category has its own dedicated page with a full product range.</p>
           </Reveal>
           <div className="mt-14 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
             {medicalCategories.map((c, i) => (

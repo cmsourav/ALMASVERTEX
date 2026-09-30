@@ -120,10 +120,10 @@ export default function LoadingScreen({ onComplete }) {
             <div className="w-2 h-2 rounded-full bg-[#B8922A] animate-pulse" />
             <div className="flex flex-col">
               <span className="font-display text-sm tracking-[0.2em] font-bold text-white uppercase">
-                ALMASVERTEX
+                ALMAS VERTEX
               </span>
               <span className="text-[0.62rem] tracking-[0.24em] text-white/40 uppercase font-mono">
-                KINGDOM OF SAUDI ARABIA · EST. 2018
+                KINGDOM OF SAUDI ARABIA · EST
               </span>
             </div>
           </div>
@@ -276,26 +276,24 @@ export default function LoadingScreen({ onComplete }) {
               return (
                 <div
                   key={sec.id}
-                  className={`relative p-3 rounded border transition-all duration-300 ${
-                    isActive
-                      ? "bg-[#1B2E52]/40 border-[#B8922A]/60 shadow-[0_4px_20px_rgba(184,146,42,0.2)]"
-                      : isPast
+                  className={`relative p-3 rounded border transition-all duration-300 ${isActive
+                    ? "bg-[#1B2E52]/40 border-[#B8922A]/60 shadow-[0_4px_20px_rgba(184,146,42,0.2)]"
+                    : isPast
                       ? "bg-white/[0.02] border-white/10 opacity-70"
                       : "bg-transparent border-white/5 opacity-40"
-                  }`}
+                    }`}
                 >
                   <div className="flex items-center justify-between mb-1">
                     <span className="font-mono text-[0.6rem] text-[#B8922A] font-semibold">
                       {sec.id}
                     </span>
                     <span
-                      className={`w-1.5 h-1.5 rounded-full ${
-                        isActive
-                          ? "bg-[#F5DE94] animate-ping"
-                          : isPast
+                      className={`w-1.5 h-1.5 rounded-full ${isActive
+                        ? "bg-[#F5DE94] animate-ping"
+                        : isPast
                           ? "bg-[#B8922A]"
                           : "bg-white/20"
-                      }`}
+                        }`}
                     />
                   </div>
                   <h4 className="font-display text-xs font-bold tracking-wider text-white uppercase">

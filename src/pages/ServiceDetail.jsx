@@ -21,8 +21,8 @@ export default function ServiceDetail() {
   return (
     <div>
       <Seo
-        title={`${service.title} | Almasvertex Contracting`}
-        description={`${service.short} Almasvertex — construction & contracting solutions in Ad-Dammam, Saudi Arabia.`}
+        title={`${service.title} | ALMAS VERTEX Contracting`}
+        description={`${service.short} ALMAS VERTEX — construction & contracting solutions in Ad-Dammam, Saudi Arabia.`}
       />
       <PageBanner
         title={service.title}

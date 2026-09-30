@@ -24,12 +24,12 @@ export default function Home() {
             </div>
           </Reveal>
           <Reveal variant="right">
-            <span className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--brand)]">Welcome to Almasvertex</span>
+            <span className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--brand)]">Welcome to ALMAS VERTEX</span>
             <h2 className="font-display mt-4 text-4xl font-bold uppercase leading-tight text-[var(--ink)] md:text-5xl">
               Who We Are: A Commitment to Excellence
             </h2>
             <p className="mt-6 leading-relaxed text-[var(--ink-soft)]">
-              At Almasvertex, we are committed to delivering top-notch construction and contracting solutions tailored to meet the diverse needs of our clients.
+              At ALMAS VERTEX, we are committed to delivering top-notch construction and contracting solutions tailored to meet the diverse needs of our clients.
             </p>
             <p className="mt-4 leading-relaxed text-[var(--ink-soft)]">
               With years of experience in the industry, we specialise in high-quality human resource management, material supplies, equipment rental, scaffolding, civil construction and backfilling materials. Our skilled team ensures every project is executed with precision, integrity and a focus on safety.
@@ -55,7 +55,7 @@ export default function Home() {
           <Reveal className="mx-auto max-w-3xl text-center">
             <span className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--brand)]">Our Purpose</span>
             <h2 className="font-display mt-4 text-4xl font-bold uppercase text-[var(--ink)] md:text-5xl">Our Vision & Mission</h2>
-            <p className="mt-4 text-[var(--ink-soft)]">Driven by a vision of progress and a mission of excellence, we are committed to shaping a brighter future through innovation, collaboration and dedication.</p>
+            <p className="mt-4 text-[var(--ink-soft)]">Committed to quality, safety and reliable service, we aim to support our clients’ projects and Saudi Arabia’s continued development.</p>
           </Reveal>
           <div className="mt-14 grid gap-8 md:grid-cols-2">
             {[{ icon: Compass, title: "Our Vision", text: "To be the leading provider of comprehensive construction and contracting solutions in the region — recognised for excellence, innovation and delivering projects that exceed client expectations." },
@@ -80,7 +80,7 @@ export default function Home() {
               <span className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--brand)]">What We Do</span>
               <h2 className="font-display mt-3 text-4xl font-bold uppercase text-[var(--ink)] md:text-5xl">Our Services</h2>
             </div>
-            <p className="max-w-md text-[var(--ink-soft)]">A single, trusted partner for every stage of your project — from manpower and materials to civil construction and equipment.</p>
+            <p className="max-w-md text-[var(--ink-soft)]">Contracting and project support across Saudi Arabia, including civil works, equipment rental, material & medical supply.</p>
           </Reveal>
 
           <div className="mt-14 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
@@ -161,7 +161,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 px-6 text-center text-white md:flex-row md:text-left">
           <div>
             <h2 className="font-display text-4xl font-bold uppercase md:text-5xl">Ready To Build Something Great?</h2>
-            <p className="mt-3 max-w-2xl text-white/90">Partner with Almasvertex for reliable, safe and high-quality construction solutions across the Kingdom.</p>
+            <p className="mt-3 max-w-2xl text-white/90">Partner with ALMAS VERTEX for reliable, safe and high-quality construction solutions across the Kingdom.</p>
           </div>
           <Link to="/contact" className="inline-flex items-center gap-2 rounded-md bg-white px-8 py-4 text-sm font-semibold uppercase tracking-wide text-[var(--brand)] transition-transform duration-300 hover:-translate-y-1">
             Get In Touch <ArrowRight className="h-4 w-4" />

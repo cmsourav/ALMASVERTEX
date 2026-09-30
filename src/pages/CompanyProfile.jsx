@@ -17,7 +17,7 @@ export default function CompanyProfile() {
       e.preventDefault();
       toast({
         title: "Company profile coming soon",
-        description: "The official Almasvertex company profile PDF will be available here shortly.",
+        description: "The official ALMAS VERTEX company profile PDF will be available here shortly.",
       });
     }
   };
@@ -25,8 +25,8 @@ export default function CompanyProfile() {
   return (
     <div>
       <Seo
-        title="Company Profile | Almasvertex"
-        description="Download or view the Almasvertex company profile — a diversified contracting and medical supplies group serving the Kingdom of Saudi Arabia."
+        title="Company Profile | ALMAS VERTEX"
+        description="Download or view the ALMAS VERTEX company profile — a diversified contracting and medical supplies group serving the Kingdom of Saudi Arabia."
       />
       <PageBanner title="Company Profile" crumbs={[{ label: "Company Profile" }]} image="https://images.unsplash.com/photo-1597390838451-9d4001598e12" />
 
@@ -87,7 +87,7 @@ export default function CompanyProfile() {
               <div className="rounded-2xl bg-[var(--ink)] p-8 text-center text-white">
                 <FileText className="mx-auto h-12 w-12 text-[var(--brand)]" />
                 <h3 className="font-display mt-4 text-2xl font-bold uppercase">Download Profile</h3>
-                <p className="mt-2 text-sm text-gray-400">Get the complete Almasvertex company profile document.</p>
+                <p className="mt-2 text-sm text-gray-400">Get the complete ALMAS VERTEX company profile document.</p>
                 <a
                   href={companyProfile.pdfUrl || "#"}
                   onClick={handleDownload}

@@ -21,8 +21,8 @@ export default function MedicalCategory({ slug: slugProp }) {
   return (
     <div>
       <Seo
-        title={`${category.name} | Almasvertex Medical`}
-        description={`${category.description} Almasvertex Medical Division — professional B2B medical supplies in Ad-Dammam, Saudi Arabia.`}
+        title={`${category.name} | ALMAS VERTEX Medical`}
+        description={`${category.description} ALMAS VERTEX Medical Division — professional B2B medical supplies in Ad-Dammam, Saudi Arabia.`}
       />
       <PageBanner
         title={category.name}
