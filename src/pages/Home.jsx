@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, ArrowUpRight, Target, Compass, Quote } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Target, Compass } from "lucide-react";
 import HeroSlider from "../components/HeroSlider";
 import StatsBar from "../components/StatsBar";
 import Reveal from "../components/Reveal";
-import { services, medical, testimonials } from "../mock/mock";
+import { services, medical } from "../mock/mock";
 
 export default function Home() {
   return (
@@ -126,33 +126,6 @@ export default function Home() {
               </div>
             ))}
           </Reveal>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="bg-gray-50 py-24">
-        <div className="mx-auto max-w-7xl px-6">
-          <Reveal className="mx-auto max-w-2xl text-center">
-            <span className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--brand)]">Testimonials</span>
-            <h2 className="font-display mt-3 text-4xl font-bold uppercase text-[var(--ink)] md:text-5xl">What Our Clients Say</h2>
-          </Reveal>
-          <div className="mt-14 grid gap-7 md:grid-cols-3">
-            {testimonials.map((t, i) => (
-              <Reveal key={t.name} delay={i * 120}>
-                <div className="h-full rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-100 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-                  <Quote className="h-10 w-10 text-[var(--brand)]/25" />
-                  <p className="mt-4 leading-relaxed text-[var(--ink-soft)]">{t.text}</p>
-                  <div className="mt-6 flex items-center gap-4 border-t pt-5">
-                    <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--brand)] font-display text-xl font-bold text-white">{t.name.charAt(0)}</span>
-                    <div>
-                      <div className="font-semibold text-[var(--ink)]">{t.name}</div>
-                      <div className="text-sm text-[var(--ink-soft)]">{t.role}</div>
-                    </div>
-                  </div>
-                </div>
-              </Reveal>
-            ))}
-          </div>
         </div>
       </section>
 
