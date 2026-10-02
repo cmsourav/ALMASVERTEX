@@ -2,7 +2,7 @@
 // NOTE: All data below is MOCKED for the frontend-only build.
 
 export const company = {
-  name: "ALMAS VERTEX",
+  name: "Almas Vertex International co",
   tagline: "Construction & Contracting",
   email: "admin@almasvertex.com",
   phones: ["+966541539197"],
@@ -30,7 +30,7 @@ export const heroSlides = [
     id: 2,
     kicker: "Contracting",
     title: "Vision In Contracting",
-    text: "At ALMAS VERTEX, we are dedicated to building innovative and sustainable solutions that meet the evolving needs of our clients.",
+    text: "At Almas Vertex International co, we are dedicated to building innovative and sustainable solutions that meet the evolving needs of our clients.",
     cta: "/about",
     image: "https://images.unsplash.com/photo-1597390838451-9d4001598e12?w=1600&q=80&auto=format&fit=crop",
   },
@@ -51,7 +51,7 @@ export const services = [
     short: "Safe, certified access solutions and scaffolding systems for projects of any scale.",
     image: "https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?w=800&q=80&auto=format&fit=crop",
     intro:
-      "At ALMAS VERTEX, we provide comprehensive scaffolding solutions engineered for safety, stability and efficiency. Our certified scaffolders design and erect systems tailored to your site, giving your workforce secure access at every elevation.",
+      "At Almas Vertex International co, we provide comprehensive scaffolding solutions engineered for safety, stability and efficiency. Our certified scaffolders design and erect systems tailored to your site, giving your workforce secure access at every elevation.",
     body:
       "From tube-and-coupler to modular system scaffolds, our team follows strict safety protocols and international standards. We manage inspection, tagging and dismantling so your project stays compliant and on schedule, minimising downtime and risk throughout the build.",
     gallery: [
@@ -79,7 +79,7 @@ export const services = [
     short: "High-grade backfilling materials and earthworks for stable, lasting foundations.",
     image: "https://images.unsplash.com/photo-1630288214173-a119cf823388?w=800&q=80&auto=format&fit=crop",
     intro:
-      "ALMAS VERTEX supplies premium backfilling materials and delivers professional earthworks that create the stable base every project depends on. We source graded aggregates and fill materials that meet strict engineering specifications.",
+      "Almas Vertex International co supplies premium backfilling materials and delivers professional earthworks that create the stable base every project depends on. We source graded aggregates and fill materials that meet strict engineering specifications.",
     body:
       "Our logistics network ensures timely delivery directly to site, while our operators handle excavation, compaction and grading with the right equipment for the job. The result is reliable ground preparation that supports long-term structural integrity.",
     gallery: [
@@ -107,7 +107,7 @@ export const services = [
     short: "A comprehensive range of construction materials sourced from trusted suppliers.",
     image: "https://images.unsplash.com/photo-1694521787673-28cbd8830ea5?w=800&q=80&auto=format&fit=crop",
     intro:
-      "At ALMAS VERTEX, our commitment to quality starts with sourcing materials from trusted suppliers. We provide a comprehensive range of construction materials, including concrete, aggregates and specialty items, ensuring every project benefits from the best resources available.",
+      "At Almas Vertex International co, our commitment to quality starts with sourcing materials from trusted suppliers. We provide a comprehensive range of construction materials, including concrete, aggregates and specialty items, ensuring every project benefits from the best resources available.",
     body:
       "Our logistics team ensures timely delivery to construction sites, minimising downtime and helping keep projects on schedule. With competitive pricing, clients can maximise their budget without compromising on quality, leading to greater efficiency and satisfaction throughout the construction process.",
     trading: [
@@ -167,7 +167,7 @@ export const whyChoose = [
 
 export const medical = {
   intro:
-    "ALMAS VERTEX for Medical Supplies is a Saudi Arabia-based distributor specialising in a wide array of medical products. Our offerings include medical instruments, surgical supplies, sanitary and hygiene items, as well as protective apparel and accessories.",
+    "Almas Vertex International co for Medical Supplies is a Saudi Arabia-based distributor specialising in a wide array of medical products. Our offerings include medical instruments, surgical supplies, sanitary and hygiene items, as well as protective apparel and accessories.",
   body:
     "We support healthcare providers across the Kingdom by supplying high-quality products essential for effective patient care and safety in hospitals, clinics and other healthcare facilities. Our reliable supply chain and quality assurance ensure that critical items are always available when they matter most.",
   categories: [
@@ -189,7 +189,7 @@ export const careers = [
 ];
 
 export const testimonials = [
-  { name: "Khalid Al-Otaibi", role: "Project Director, Gulf Infra", text: "ALMAS VERTEX delivered our scaffolding and manpower needs flawlessly. Safety and timelines were never compromised." },
+  { name: "Khalid Al-Otaibi", role: "Project Director, Gulf Infra", text: "Almas Vertex International co delivered our scaffolding and manpower needs flawlessly. Safety and timelines were never compromised." },
   { name: "Sara Mahmoud", role: "Procurement Lead, EPC Co.", text: "Reliable material supply with competitive pricing. Their logistics team kept our project perfectly on schedule." },
   { name: "Yusuf Rahman", role: "Operations Manager, BuildCorp", text: "A true single-source partner. From equipment rental to civil works, the quality is consistently excellent." },
 ];
@@ -198,9 +198,9 @@ export const testimonials = [
 // COMPANY PROFILE (editable placeholder — link the official PDF when available)
 // =============================================================
 export const companyProfile = {
-  headline: "About ALMAS VERTEX",
+  headline: "About Almas Vertex International co",
   intro:
-    "ALMAS VERTEX is a diversified contracting and supplies group serving the construction, industrial and healthcare sectors across the Kingdom of Saudi Arabia. This profile summarises who we are, the sectors we operate in and the value we deliver to our partners.",
+    "Almas Vertex International co is a diversified contracting and supplies group serving the construction, industrial and healthcare sectors across the Kingdom of Saudi Arabia. This profile summarises who we are, the sectors we operate in and the value we deliver to our partners.",
   // Replace `pdfUrl` with the official Almasvertex company-profile PDF when provided.
   pdfUrl: "",
   highlights: [
@@ -233,7 +233,7 @@ export const medicalCategories = [
     slug: "medical-devices",
     description: "Diagnostic, monitoring and therapeutic devices for hospitals and clinics.",
     longDescription:
-      "ALMAS VERTEX supplies a broad range of medical devices used across diagnostics, patient monitoring and therapy. Our sourcing focuses on certified, reliable products that support accurate care and clinical safety. The items shown below are representative categories — contact us for the current catalogue and specifications.",
+      "Almas Vertex International co supplies a broad range of medical devices used across diagnostics, patient monitoring and therapy. Our sourcing focuses on certified, reliable products that support accurate care and clinical safety. The items shown below are representative categories — contact us for the current catalogue and specifications.",
     image: "https://images.unsplash.com/photo-1551076805-e1869033e561?w=800&q=80&auto=format&fit=crop",
     products: [
       P("md-1", "medical-devices", "Patient Monitor", "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=400&q=80&auto=format&fit=crop", "Ref: MD-1001", true),

@@ -120,7 +120,7 @@ export default function LoadingScreen({ onComplete }) {
             <div className="w-2 h-2 rounded-full bg-[#B8922A] animate-pulse" />
             <div className="flex flex-col">
               <span className="font-display text-sm tracking-[0.2em] font-bold text-white uppercase">
-                ALMAS VERTEX
+                Almas Vertex International co
               </span>
               <span className="text-[0.62rem] tracking-[0.24em] text-white/40 uppercase font-mono">
                 KINGDOM OF SAUDI ARABIA · EST

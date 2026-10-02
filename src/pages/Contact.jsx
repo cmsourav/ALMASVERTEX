@@ -56,8 +56,8 @@ export default function Contact() {
   return (
     <div>
       <Seo
-        title="Contact Us | ALMAS VERTEX"
-        description="Get in touch with ALMAS VERTEX in Ad-Dammam, Saudi Arabia. Contact our contracting and medical divisions for quotes, projects and enquiries."
+        title="Contact Us | Almas Vertex International co"
+        description="Get in touch with Almas Vertex International co in Ad-Dammam, Saudi Arabia. Contact our contracting and medical divisions for quotes, projects and enquiries."
       />
       <PageBanner title="Contact Us" crumbs={[{ label: "Contact Us" }]} image="https://images.unsplash.com/photo-1511454493857-0a29f2c023c7" />
 
@@ -83,7 +83,7 @@ export default function Contact() {
             <Reveal variant="left">
               <span className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--brand)]">Get In Touch</span>
               <h2 className="font-display mt-3 text-4xl font-bold uppercase text-[var(--ink)] md:text-5xl">We Love To Hear From You</h2>
-              <p className="mt-4 text-[var(--ink-soft)]">ALMAS VERTEX is conveniently located in Dammam. We welcome visits from clients and partners to discuss projects, collaborations or inquiries.</p>
+              <p className="mt-4 text-[var(--ink-soft)]">Almas Vertex International co is conveniently located in Dammam. We welcome visits from clients and partners to discuss projects, collaborations or inquiries.</p>
               <form onSubmit={submit} className="mt-8 space-y-4">
                 <div className="grid gap-4 sm:grid-cols-2">
                   <input required value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} placeholder="Your Name" className="w-full rounded-lg border border-gray-200 px-4 py-3.5 text-sm outline-none focus:border-[var(--brand)]" />
@@ -102,7 +102,7 @@ export default function Contact() {
 
             <Reveal variant="right" className="overflow-hidden rounded-2xl ring-1 ring-gray-100">
               <iframe
-                title="ALMAS VERTEX location"
+                title="Almas Vertex International co location"
                 src="https://www.google.com/maps?q=Dammam%20Saudi%20Arabia&output=embed"
                 className="h-full min-h-[480px] w-full"
                 loading="lazy"

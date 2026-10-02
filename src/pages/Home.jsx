@@ -24,12 +24,12 @@ export default function Home() {
             </div>
           </Reveal>
           <Reveal variant="right">
-            <span className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--brand)]">Welcome to ALMAS VERTEX</span>
+            <span className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--brand)]">Welcome to Almas Vertex International co</span>
             <h2 className="font-display mt-4 text-4xl font-bold uppercase leading-tight text-[var(--ink)] md:text-5xl">
               Who We Are: A Commitment to Excellence
             </h2>
             <p className="mt-6 leading-relaxed text-[var(--ink-soft)]">
-              At ALMAS VERTEX, we are committed to delivering top-notch construction and contracting solutions tailored to meet the diverse needs of our clients.
+              At Almas Vertex International co, we are committed to delivering top-notch construction and contracting solutions tailored to meet the diverse needs of our clients.
             </p>
             <p className="mt-4 leading-relaxed text-[var(--ink-soft)]">
               With years of experience in the industry, we specialise in high-quality human resource management, material supplies, equipment rental, scaffolding, civil construction and backfilling materials. Our skilled team ensures every project is executed with precision, integrity and a focus on safety.
@@ -134,7 +134,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 px-6 text-center text-white md:flex-row md:text-left">
           <div>
             <h2 className="font-display text-4xl font-bold uppercase md:text-5xl">Ready To Build Something Great?</h2>
-            <p className="mt-3 max-w-2xl text-white/90">Partner with ALMAS VERTEX for reliable, safe and high-quality construction solutions across the Kingdom.</p>
+            <p className="mt-3 max-w-2xl text-white/90">Partner with Almas Vertex International co for reliable, safe and high-quality construction solutions across the Kingdom.</p>
           </div>
           <Link to="/contact" className="inline-flex items-center gap-2 rounded-md bg-white px-8 py-4 text-sm font-semibold uppercase tracking-wide text-[var(--brand)] transition-transform duration-300 hover:-translate-y-1">
             Get In Touch <ArrowRight className="h-4 w-4" />

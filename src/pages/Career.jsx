@@ -49,8 +49,8 @@ export default function Career() {
   return (
     <div>
       <Seo
-        title="Careers | ALMAS VERTEX"
-        description="Join ALMAS VERTEX. Apply online to join our contracting and medical divisions in Ad-Dammam, Saudi Arabia."
+        title="Careers | Almas Vertex International co"
+        description="Join Almas Vertex International co. Apply online to join our contracting and medical divisions in Ad-Dammam, Saudi Arabia."
       />
       <PageBanner title="Career" crumbs={[{ label: "Career" }]} image="https://images.unsplash.com/photo-1541888946425-d81bb19240f5" />
 
@@ -59,12 +59,12 @@ export default function Career() {
         <div className="mx-auto max-w-4xl px-6 text-center">
           <Reveal>
             <span className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--brand)]">Join Our Team</span>
-            <h2 className="font-display mt-3 text-4xl font-bold uppercase text-[var(--ink)] md:text-5xl">Join Our Team At ALMAS VERTEX</h2>
+            <h2 className="font-display mt-3 text-4xl font-bold uppercase text-[var(--ink)] md:text-5xl">Join Our Team At Almas Vertex International co</h2>
             <p className="mt-6 leading-relaxed text-[var(--ink-soft)]">
-              At ALMAS VERTEX, we believe our success is driven by our talented and dedicated team. We are always on the lookout for passionate individuals who are eager to contribute to our mission of delivering exceptional construction, contracting and medical supply solutions. Whether you are an experienced professional or just starting out, we offer a dynamic environment that fosters growth, collaboration and innovation.
+              At Almas Vertex International co, we believe our success is driven by our talented and dedicated team. We are always on the lookout for passionate individuals who are eager to contribute to our mission of delivering exceptional construction, contracting and medical supply solutions. Whether you are an experienced professional or just starting out, we offer a dynamic environment that fosters growth, collaboration and innovation.
             </p>
             <p className="mt-4 leading-relaxed text-[var(--ink-soft)]">
-              Joining ALMAS VERTEX means becoming part of a community that values hard work, integrity and excellence. We offer competitive packages, benefits and genuine opportunities for advancement. If you are ready to take the next step and make a meaningful impact, apply today. Together, we can build a brighter future.
+              Joining Almas Vertex International co means becoming part of a community that values hard work, integrity and excellence. We offer competitive packages, benefits and genuine opportunities for advancement. If you are ready to take the next step and make a meaningful impact, apply today. Together, we can build a brighter future.
             </p>
           </Reveal>
         </div>

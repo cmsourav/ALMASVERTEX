@@ -27,10 +27,10 @@ export default function About() {
             </div>
           </Reveal>
           <Reveal variant="right">
-            <span className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--brand)]">About ALMAS VERTEX</span>
+            <span className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--brand)]">About Almas Vertex International co</span>
             <h2 className="font-display mt-4 text-4xl font-bold uppercase leading-tight text-[var(--ink)] md:text-5xl">Leaders In Construction Solutions</h2>
             <p className="mt-6 leading-relaxed text-[var(--ink-soft)]">
-              At ALMAS VERTEX, we are dedicated to providing exceptional construction and contracting solutions tailored to meet the diverse needs of our clients. With extensive experience in the industry, we have established a strong reputation for delivering high-quality services — including material supply, equipment rental, scaffolding, civil construction, backfilling materials and temporary facilities.
+              At Almas Vertex International co, we are dedicated to providing exceptional construction and contracting solutions tailored to meet the diverse needs of our clients. With extensive experience in the industry, we have established a strong reputation for delivering high-quality services — including material supply, equipment rental, scaffolding, civil construction, backfilling materials and temporary facilities.
             </p>
             <p className="mt-4 leading-relaxed text-[var(--ink-soft)]">
               We prioritise sustainability and environmentally responsible practices. By incorporating eco-friendly methods and materials, we not only reduce our environmental impact but also provide innovative solutions that add value to our clients' projects.
@@ -66,7 +66,7 @@ export default function About() {
             </div>
           </Reveal>
           <Reveal variant="right" className="overflow-hidden rounded-2xl">
-            <img src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77" alt="Why choose ALMAS VERTEX" className="h-[640px] w-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77" alt="Why choose Almas Vertex International co" className="h-[640px] w-full object-cover" />
           </Reveal>
         </div>
       </section>
